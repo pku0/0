@@ -58,7 +58,7 @@ echo "Docker 代理设置完成。"
 
 
 
-
+groupadd docker
 #添加用户
 usermod -aG docker $USER #sudo
 # sudo reboot
