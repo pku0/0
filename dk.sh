@@ -18,11 +18,11 @@ wget https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/dock
 wget https://download.docker.com/linux/ubuntu/dists/noble/pool/stable/amd64/docker-compose-plugin_2.29.2-1~ubuntu.24.04~noble_amd64.deb
 
 # 安装 .deb 文件
-dpkg -i containerd.io_1.7.21-1_amd64.deb
-dpkg -i docker-ce_27.2.1-1~ubuntu.24.04~noble_amd64.deb
-dpkg -i docker-ce-cli_27.2.1-1~ubuntu.24.04~noble_amd64.deb
-dpkg -i docker-buildx-plugin_0.17.1-1~ubuntu.24.04~noble_amd64.deb
-dpkg -i docker-compose-plugin_2.29.2-1~ubuntu.24.04~noble_amd64.deb
+dpkg -i containerd.io_1.7.21-1_amd64.deb \
+   docker-ce_27.2.1-1~ubuntu.24.04~noble_amd64.deb \
+   docker-ce-cli_27.2.1-1~ubuntu.24.04~noble_amd64.deb \
+   docker-buildx-plugin_0.17.1-1~ubuntu.24.04~noble_amd64.deb \
+   docker-compose-plugin_2.29.2-1~ubuntu.24.04~noble_amd64.deb
 
 # 启动 Docker 服务
 service docker start
